@@ -11,7 +11,7 @@ const BlogsItem = ({ blog }) => {
   });
 
   return (
-    <div>
+    <div className="rounded-md shadow-xl">
       <Link
         rel="noopener noreferrer"
         to={!token ? "/login" : `/blogs/${blog.id}`}
@@ -27,9 +27,9 @@ const BlogsItem = ({ blog }) => {
           <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
             {blog.title}
           </h3>
-          <div className="flex justify-between">
-            <span className="text-xs dark:text-gray-600">{formatteDate}</span>
-            <div className=" text-xs dark:text-gray-600">{blog.author}</div>
+          <div className="flex justify-between py-2">
+            <span className="text-sm dark:text-gray-600">{formatteDate}</span>
+            <div className=" text-sm dark:text-gray-600">{blog.author}</div>
           </div>
           <p>{blog.description}</p>
         </div>
