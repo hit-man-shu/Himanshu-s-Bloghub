@@ -40,12 +40,14 @@ const Home = () => {
     <>
       <section className="container mx-auto mt-10 overflow-hidden rounded-t-md bg-white bg-gradient-to-r from-blue-500 to-blue-800 py-20 text-white">
         <div className="container mx-auto text-center">
-          <h1 className="mb-4 text-4xl font-bold">
-            Welcome to Himanshu's Bloghub
+          <h1 className="mb-4 text-3xl font-bold sm:text-3xl lg:text-5xl">
+            Welcome to Himanshu's Blog
           </h1>
-          <p className="mb-8 text-lg">
-            Explore insightful articles on various topics to enhance your
-            knowledge and skills.
+          <p className="mx-4 mb-8 text-lg sm:mx-12 sm:text-xl md:mx-24 lg:mx-48 xl:mx-64">
+            Your ultimate destination for everything technology-related. Dive
+            into a world of innovation, discovery, and insight as we explore the
+            latest trends, developments, and breakthroughs in the ever-changing
+            world of technology.
           </p>
           <Link
             to="/blogs"
