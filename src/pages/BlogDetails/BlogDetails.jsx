@@ -123,7 +123,7 @@ const BlogDetails = () => {
           </p>
           <div className="flex items-center justify-end gap-4 font-semibold text-blue-900">
             {isPendingDeletion ? (
-              <p> "Deleting, please wait..!"</p>
+              <p> Deleting, please wait..!</p>
             ) : (
               <>
                 <button onClick={handleStopDelete}>Cancel</button>

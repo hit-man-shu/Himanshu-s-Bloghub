@@ -6,7 +6,10 @@ export const queryClient = new QueryClient();
 // getPost
 export const getBlogs = async ({ signal }) => {
   try {
-    const resp = await axios.get("http://localhost:8000/posts", { signal });
+    const resp = await axios.get(
+      "https://himanshu-s-bloghub.onrender.com/posts",
+      { signal },
+    );
     return resp.data.posts;
   } catch (error) {
     throw error;
@@ -16,9 +19,12 @@ export const getBlogs = async ({ signal }) => {
 // getSingle Post
 export const getSingleBlog = async ({ id, signal }) => {
   try {
-    const resp = await axios.get(`http://localhost:8000/posts/${id}`, {
-      signal,
-    });
+    const resp = await axios.get(
+      `https://himanshu-s-bloghub.onrender.com/posts/${id}`,
+      {
+        signal,
+      },
+    );
     return resp.data;
   } catch (error) {
     throw error;
@@ -28,11 +34,15 @@ export const getSingleBlog = async ({ id, signal }) => {
 // post Data
 export const postBlog = async ({ postData, token }) => {
   try {
-    const resp = await axios.post("http://localhost:8000/posts", postData, {
-      headers: {
-        Authorization: token,
+    const resp = await axios.post(
+      "https://himanshu-s-bloghub.onrender.com/posts",
+      postData,
+      {
+        headers: {
+          Authorization: token,
+        },
       },
-    });
+    );
     console.log("Post sucessfully");
     return resp.data;
   } catch (error) {
@@ -44,7 +54,7 @@ export const postBlog = async ({ postData, token }) => {
 export const updateBlog = async ({ postId, postData, token }) => {
   try {
     const response = await axios.put(
-      `http://localhost:8000/posts/${postId}`,
+      `https://himanshu-s-bloghub.onrender.com/posts/${postId}`,
       postData, // Pass postData here
       {
         headers: {
@@ -66,7 +76,7 @@ export const updateBlog = async ({ postId, postData, token }) => {
 export const deleteBlog = async ({ postId, token }) => {
   try {
     const response = await axios.delete(
-      `http://localhost:8000/posts/${postId}`,
+      `https://himanshu-s-bloghub.onrender.com/posts/${postId}`,
       {
         headers: {
           Authorization: token.token,
