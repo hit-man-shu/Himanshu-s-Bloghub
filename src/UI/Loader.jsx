@@ -2,11 +2,10 @@ import React from "react";
 
 const Loader = () => {
   return (
-    <div className="flex h-screen flex-col items-center justify-center">
-      <div className="flex gap-2">
-        <div className="h-5 w-5 animate-pulse rounded-full bg-blue-600"></div>
-        <div className="h-5 w-5 animate-pulse rounded-full bg-blue-600"></div>
-        <div className="h-5 w-5 animate-pulse rounded-full bg-blue-600"></div>
+    <div className="flex items-center justify-center">
+      <div className="relative">
+        <div className="h-12 w-12 rounded-full border-b-8 border-t-8 border-gray-200"></div>
+        <div className="absolute left-0 top-0 h-12 w-12 animate-spin rounded-full border-b-8 border-t-8 border-blue-500"></div>
       </div>
     </div>
   );

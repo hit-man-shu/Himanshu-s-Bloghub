@@ -5,7 +5,7 @@ const Input = ({ label, id, ...props }) => {
     <>
       <div className="mb-4">
         <label
-          className="mb-2 block text-lg font-bold text-[#ffc404]"
+          className="mb-2 block text-lg font-bold text-blue-700"
           htmlFor={id}
         >
           {label}

@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "id": 1711628546952,
+      "username": "Himanshu",
+      "password": "$2b$10$q.iLwkaW.ZS2oWZWOhPtZu6aAcpF8JpsJfQ7gstWEvo3DSeORJNq6",
+      "email": "himanshusahoo2019@gmail.com"
+    },
+    {
+      "id": 1711633293145,
+      "username": "Subham",
+      "password": "$2b$10$qHBMA5DcJ6HzmzC.YHtPwe8isMlgSED06/8aj1bzz1F/0GsfMc1Ti",
+      "email": "subham@gamil.com"
+    },
+    {
+      "id": 1711635529714,
+      "username": "Badal",
+      "password": "$2b$10$RLn7brunEo//WMfbgfleWOF2LWjhYGPWQVWu09V7IwV7UkmTSsu26",
+      "email": "badal@gmail.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Introducing Kali Linux 2024.1 Release",
+      "author": "Himanshu",
+      "image": "https://www.kali.org/blog/kali-linux-2024-1-release/images/banner-2024.1-release.jpg",
+      "description": "The release includes a theme refresh with new wallpapers and a GRUB theme, tweaks to desktop environments, updates to NetHunter, including support for Android 14 and new attack capabilities, and various new tools.",
+      "date": "2024-03-31"
+    },
+    {
+      "id": 2,
+      "title": "React 19: Optimized Future",
+      "author": "Subham",
+      "image": "https://media.licdn.com/dms/image/D4D12AQEwoxk3QhK9iA/article-cover_image-shrink_600_2000/0/1708413334844?e=2147483647&v=beta&t=NAzLxBsgonanB57_A4R_fjZ6AQHQNDEQh7N6s1NUa8E",
+      "description": "The React Compiler, once just an idea, is now being used in Instagram, making it work better in real life. This cool tool helps with a common problem in React apps: they often redo things they don't need to.",
+      "date": "2024-03-28"
+    },
+    {
+      "id": 3,
+      "title": "What’s New in Node.Js 19",
+      "author": "user3",
+      "image": "https://positiwise.com/blog/wp-content/uploads/2023/01/what-is-new-in-node-js-19-1.jpg",
+      "description": "Node JS 19 represents the upcoming iteration of the widely used open-source server-side JavaScript runtime employed by millions of developers. The experimental Node has engineered the functionality to operate on Linux, macOS, and Windows. ",
+      "date": "2024-03-27"
+    },
+    {
+      "id": 1711744749579,
+      "title": "GitHub Copilot Gets Smarter: Improved Instruction Following & Performance",
+      "author": "Himanshu",
+      "image": "https://github.blog/wp-content/uploads/2024/02/Copilot-Enterprise-Blog-Header.png?fit=2400%2C1260",
+      "description": "Improved Instruction Following: Write clearer comments and instructions - Copilot will now understand your intent better, generating code that aligns perfectly with your requirements. Performance Boost: Experience smoother and faster code generation, allowing you to focus on the bigger picture. ",
+      "date": "2024-03-31"
+    },
+    {
+      "id": 1711744895762,
+      "title": "Devin:The first AI Software Engineer.",
+      "author": "Himanshu",
+      "image": "https://media.geeksforgeeks.org/wp-content/uploads/20240315155406/Devin-AI-The-Next-Evolution-in-Software-Development-(1).webp",
+      "description": "US-based start-up Cognition has introduced what it calls the world’s first AI software engineer.It is equipped with its own command line, code editor, and browser which helps it to operate independently just like a software engineer. Most current AI systems have trouble staying coherent and on task during these types of long jobs, but Devin keeps going through hundreds and even thousands of tasks without going off track.",
+      "date": "2024-03-30"
+    },
+    {
+      "id": 1711745794727,
+      "title": "Sora Ai OpenAI's text-to-video generative AI model. ",
+      "author": "Himanshu",
+      "image": "https://nextr.in/blog/wp-content/uploads/2024/03/AI-SORA-2-1170x720.jpg",
+      "description": "AI SORA is developed by OPEN AI. AI SORA’s presence in the tech landscape signifies a leap forward in AI technology. Its ability to streamline processes, enhance productivity, and provide actionable insights makes it a key player in shaping the future of technological advancements. AI SORA is a cutting-edge artificial intelligence platform designed to revolutionize various aspects of technology and data processing. Its advanced algorithms and machine learning capabilities make it a powerful tool in the realm of AI.",
+      "date": "2024-03-31"
+    },
+    {
+      "id": 1711746126836,
+      "title": "Next.js 14",
+      "author": "Subham",
+      "image": "https://nextjs.org/static/blog/next-14/twitter-card.png",
+      "description": "Next.js 14 brings powerful features and improvements to the table, and coupling it with cPanel, a popular web hosting control panel, provides a robust environment for hosting and managing your web applications. Whether you're a seasoned developer or just starting, following this guide will equip you with the knowledge to host your Next.js 14 app like a pro.",
+      "date": "2024-02-26"
+    }
+  ]
+}
