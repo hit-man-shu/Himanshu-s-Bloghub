@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -37,19 +38,19 @@ const About = () => {
           <p className="text-lg leading-loose">
             I'm always open to feedback and suggestions, so feel free to reach
             out to me via{" "}
-            <a
+            <Link
               className="hover:text-blue-900"
-              href="mailto:himanshusahoo2019@gmail.com"
+              to="mailto:himanshusahoo2019@gmail.com"
             >
               email-: himanshusahoo2019@gmail.com
-            </a>
+            </Link>
             .{" "}
-            <a
+            <Link
               className="hover:text-blue-900"
-              href="https://github.com/hit-man-shu/hit-man-shu"
+              to="https://github.com/hit-man-shu/hit-man-shu"
             >
               github -: github.com/hit-man-shu
-            </a>
+            </Link>
             .
           </p>
         </div>
