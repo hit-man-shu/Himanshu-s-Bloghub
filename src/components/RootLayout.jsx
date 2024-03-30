@@ -9,24 +9,31 @@ const RootLayout = () => {
   console.log(token);
   const submit = useSubmit();
 
-  console.log(token);
-
-  useEffect(() => {
-    if (!token) {
-      return;
-    }
-
-    if (token === "EXPIRED") {
-      submit(null, { action: "/logout", method: "post" });
-      return;
-    }
+  const checkTokenExpiration = () => {
+    const token = localStorage.getItem("token");
+    if (!token) return true; // No token found, consider expired
 
     const tokenDuration = getTokenDuration();
+    return tokenDuration <= 0;
+  };
 
-    setTimeout(() => {
+  useEffect(() => {
+    // if (!token) {
+    //   return;
+    // }
+
+    // if (token === "EXPIRED") {
+    //   submit(null, { action: "/logout", method: "post" });
+    //   return;
+    // }
+
+    // const tokenDuration = getTokenDuration();
+
+    const tokenExpired = checkTokenExpiration();
+    if (tokenExpired) {
       submit(null, { action: "/logout", method: "post" });
-    }, tokenDuration);
-  }, [token, submit]);
+    }
+  }, [submit]);
 
   return (
     <div className="min-h-screen bg-stone-950">
